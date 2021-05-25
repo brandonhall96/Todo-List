@@ -21,5 +21,4 @@ class MyList extends React.Component {
 }
 
 
-
 export default MyList
