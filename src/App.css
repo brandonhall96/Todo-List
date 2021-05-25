@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -37,8 +35,44 @@
   }
 }
 
-#body {
+body {
   background-color: #61dafb;
   font-style: oblique;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+}
+
+li {
+  border-bottom: 1px solid #ccc;
+  width: 200px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+div {
+  width: 500px;
+  margin: auto;
+}
+
+ul {
+  width: 200px;
+  margin: auto;
+}
+
+.App {
+  font-size: 40px;
+}
+
+#tasklist {
+  font-size: 60px;
+  white-space: nowrap;
+  margin-right: 250px;
+}
+
+#maindiv {
+width: 500px;
+margin: auto;
 
 }

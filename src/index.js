@@ -5,11 +5,13 @@ import MyList from './components/MyList';
 import ListItems from './components/ListItems';
 import reportWebVitals from './reportWebVitals';
 
+const toDos = ["Grocery Shopping", "Pay Speed Ticket", "Do Laundry", "Go To MVA"]
+
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyList />
+    <MyList taskList = {toDos}  />
   </React.StrictMode>,
   document.getElementById('root')
 );
