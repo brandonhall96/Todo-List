@@ -88,16 +88,25 @@ class MyList extends Component {
 
   newTaskCreate = (e) => {
     this.setState({
-      newTask: []
+      newTask: e.target.value
     }) 
   }
 
-  newTaskEdit = () => {
-    
-  }
 
   addNewTask = (e) => {
     e.preventDefault();
+     // stops the form from re-rendering
+    
+    let addedTask = this.state.allTask
+    // create new variable that holds an instance of toDoItemArray
+    addedTask.push(this.state.newTask);
+    // pushes the instance of newitem into addedItem
+    this.setState({
+      allTask: addedTask,
+      // sets value of 'toDoItemArray' to 'addedItem'
+      newTask: '',
+      // set 'newItem' back of an empty string.
+  })
   }
 
 
@@ -125,7 +134,7 @@ class MyList extends Component {
           onChange={(e) => this.newTaskCreate(e)}
           value={this.newTask}
           />
-          <button onClick={(e) => this.addItem(e)}>Add it!</button>
+          <button onClick={(e) => this.addNewTask(e)}>Add it!</button>
       </form>
          
       
