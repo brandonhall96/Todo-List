@@ -122,13 +122,8 @@ class MyList extends Component {
     return(
       <div className="App">
       <header>
-        <h1>Things i need todo</h1>
-
-        <ul>
-        {allMyTasks}
-        </ul>
-        <button onClick={this.clearAllTasks}>Clear Tasks</button>
-        <form>
+        <h1 id='listnameh1'>Things i need todo</h1>
+        <form id='additemform'>
           <input type="text"
           placeholder="Type an item here"
           onChange={(e) => this.newTaskCreate(e)}
@@ -136,6 +131,11 @@ class MyList extends Component {
           />
           <button onClick={(e) => this.addNewTask(e)}>Add it!</button>
       </form>
+  
+        <ul>
+        {allMyTasks}
+        </ul>
+        <button onClick={this.clearAllTasks}>Clear Tasks</button>
          
       
 

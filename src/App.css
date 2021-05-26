@@ -63,6 +63,7 @@ ul {
 
 .App {
   font-size: 40px;
+  width: 500px;
 }
 
 #tasklist {
@@ -75,4 +76,14 @@ ul {
 width: 500px;
 margin: auto;
 
+}
+
+#additemform {
+  margin-bottom: 20px;
+  margin-top: -40px;
+}
+
+#listnameh1 {
+  
+  font-size: 55px;
 }
