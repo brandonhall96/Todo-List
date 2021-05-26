@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import MyList from './components/MyList';
-import ListItems from './components/ListItems';
+// import ListItems from './components/ListItems';
 import reportWebVitals from './reportWebVitals';
 
-const toDos = ["Grocery Shopping", "Pay Speed Ticket", "Do Laundry", "Go To MVA"]
-
+const toDos = {
+  allTask:
+  ["Grocery Shopping", "Pay Speed Ticket", "Do Laundry", "Go To MVA"]
+}
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <MyList taskList = {toDos}  />
+    <MyList toDos = {toDos}  />
   </React.StrictMode>,
   document.getElementById('root')
 );
